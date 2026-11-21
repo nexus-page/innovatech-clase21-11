@@ -280,7 +280,61 @@
         </div>
     </footer>
 
+    <script>
+        const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzwoLZ3p64wPNTjlDRqAWvdH3BL6QdUWEkV_A3gn37Zub5NiGYg75_8SCT8fbDxKLGlSg/exec";
+
+        document.getElementById('form-contacto').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const btnEnviar = this.querySelector('.btn-enviar');
+            const estadoDiv = document.getElementById('mensaje-estado');
+
+            const datos = {
+                nombre: document.getElementById('nombre').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                mensaje: document.getElementById('mensaje').value.trim()
+            };
+
+            btnEnviar.disabled = true;
+            btnEnviar.textContent = 'Enviando...';
+            estadoDiv.className = 'mensaje-estado estado-info';
+            estadoDiv.textContent = '⏳ Enviando tu mensaje...';
+
+            try {
+                const formData = new FormData();
+                formData.append('nombre', datos.nombre);
+                formData.append('email', datos.email);
+                formData.append('mensaje', datos.mensaje);
+
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    body: formData
+                });
+
+                estadoDiv.className = 'mensaje-estado estado-exito';
+                estadoDiv.textContent = '¡Gracias! Tu mensaje ha sido enviado con éxito. Nos pondremos en contacto contigo muy pronto.';
+                this.reset();
+            } catch (error) {
+                console.error('Error al enviar:', error);
+                estadoDiv.className = 'mensaje-estado estado-error';
+                estadoDiv.textContent = '❌ Ocurrió un problema al enviar tu mensaje. Por favor, inténtalo nuevamente.';
+            } finally {
+                btnEnviar.disabled = false;
+                btnEnviar.textContent = 'Enviar Mensaje';
+            }
+        });
+    </script>
+
+
+
 
     </body>
+
+
+
+
+
+
 
 </html>
