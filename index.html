@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agencia InnovaTech - Desarrollo Web</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header class="cabecera">
+            <div class="contenedor header-flex">
+                <div class="logo">
+                    <h2>Innova<span>Tech</span></h2>
+                </div>
+
+                <nav class="menu-principal">    
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">servicios</a></li>
+                        <li><a href="#nosotros">nosotros</a></li>
+                        <li><a href="#galeria">proyectos</a></li>
+                        <li><a href="#testimonios">reseñas</a></li>
+                        <li><a href="#contacto" class="btn-contacto">contáctanos</a></li>                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!--  1. SECCION HERO (portada principál) -->
+            <section id="inicio" class="hero">
+                <div class="contenedor hero-contenido">
+                    <h1>Transformamos tus ideas en <span>realidad digital</span></h1>
+                    <p>Desarrollo de software y diseño web a medida para escalar tu negocio en el mundo digital.</p>
+                    <a href="#servicios" class="btn-primario">Descubrir mas.</a>
+                </div>
+            </section>
+
+            <!--  2. SECCION SERVICIOS-->
+            <section id="servicios" class="seccion-clara">
+                <div class="contenedor">
+                    <h2 class="titulo-seccion">Nuestros Servicios</h2>
+                    <p class="subtitulo-seccion">Soluciones integrales de desarrollo web y software</p>
+                </div>
+
+                <div class="grid-servicios">
+                    <article class="tarjeta">
+                        <div class="icono">🖥️</div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Creación de sitios web modernos y responsivos.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <div class="icono">🌐</div>
+                        <h3>Desarrollo de Software</h3>
+                        <p>Soluciones personalizadas para tu negocio.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <div class="icono">📱</div>
+                        <h3>Aplicaciones Móviles</h3>
+                        <p>Desarrollo de aplicaciones para iOS y Android.</p>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!--  3. SECCION NOSOTROS-->
+            <section id="nosotros" class="seccion-oscura">
+                <div class="contenedor dos-columnas">
+                    <div class="texto-nosotros">
+                        <h2>¿Quienes somos?</h2>
+                        <p>Somos un equipo de profesionales dedicados a la creación de soluciones digitales innovadoras. Nuestra misión es ayudar a las empresas a alcanzar sus objetivos en el mundo digital.</p>
+                    
+                        <ul class="lista-check">
+                            <li>Experiencia en desarrollo web y software</li>
+                            <li>Enfoque en la calidad y la innovación</li>
+                            <li>Compromiso con el éxito de nuestros clientes</li>
+                        </ul>
+                    </div>
+
+                    <div class="imagen-nosotros">
+                        <img src="image/imagenportada.jpg" alt="Equipo de InnovaTech">
+                    </div>
+                </div>
+            </section>
+
+            <!--  4. SECCION GALERIA-->
+            <section id="galeria" class="seccion-clara">
+                <div class="contenedor">
+                    <h2 class="titulo-seccion">Casos de Éxito</h2>
+                    <p class="subtitulo-seccion">Explora algunos de nuestros proyectos más recientes.</p>
+
+                    <div class="grid-galeria">
+
+                        <!--  Figura 1-->
+                        <figure class="tarjeta-proyecto">
+                            <a href="#modal-1" class="enlace-foto">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+                                    alt="Dashboard Financiero" class="img-fluida">
+                            </a>
+                        <figcaption class="info-proyecto">
+                            <h3>Dashboard Financiero</h3>
+                            <p>Plataforma de análisis de datos en tiempo real para el sector bancario.</p>
+                        </figcaption>
+
+                        </figure>
+
+                        <div id="modal-1" class="modal-visor">
+                            <a href="#galeria" class="btn-cerrar">X</a>
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80"
+                                alt="Dashboard Ampliado">
+                        </div>
+
+                        <!--  Figura 2-->
+                        <figure class="tarjeta-proyecto">
+                            <a href="#modal-2" class="enlace-foto">
+                                <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=600&q=80"
+                                    alt="E-commerce Ropa" class="img-fluida">
+                            </a>
+                            <figcaption class="info-proyecto">
+                                <h3>E-commerce de Moda</h3>
+                                <p>Tienda virtual con pasarela de pagos integrada y gestión de inventario.</p>
+                            </figcaption>
+                        </figure>
+
+                        <div id="modal-2" class="modal-visor">
+                            <a href="#galeria" class="btn-cerrar">X</a>
+                            <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=1200&q=80"
+                                alt="E-commerce Ampliado">
+                        </div>
+
+                        <!--  Figura 3-->
+                        <figure class="tarjeta-proyecto">
+                            <a href="#modal-3" class="enlace-foto">
+                                <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=600&q=80"
+                                    alt="App de Delivery" class="img-fluida">
+                            </a>
+                            <figcaption class="info-proyecto">
+                                <h3>App de Logística</h3>
+                                <p>Aplicación móvil con rastreo GPS y gestión de flotas automatizada.</p>
+                            </figcaption>
+                        </figure>
+                        
+                        <div id="modal-3" class="modal-visor">
+                            <a href="#galeria" class="btn-cerrar">X</a>
+                            <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?w=1200&q=80"
+                                alt="App Ampliada">
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!--  5. SECCION TESTIMONIOS-->
+            <section id="testimonios" class="seccion-oscura">
+
+                <div class="contenedor">
+                    <h2 class="titulo-seccion">Lo que dicen nuestros clientes</h2>
+                    <p class="subtitulo-seccion" style="color: #cbd5e1;">La satisfacción de quienes confían en nuestro código.</p>
+
+                    <div class="grid-testimonios">
+                        <!--  testimonio 1-->
+                        <article class="tarjeta-testimonio">
+                            <div class="estrellas">⭐⭐⭐⭐⭐</div>
+                            <p class="cita">"El equipo de InnovaTech transformó por completo nuestra plataforma. Las ventas
+                                aumentaron un 40% gracias a la nueva interfaz."</p>
+                                
+                            <div class="perfil-cliente">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&q=80" alt="CEO"
+                                    class="avatar">
+                                <div>
+                                    <h4>Carlos Mendoza</h4>
+                                    <span>Director General, RetailCorp</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!--  testimonio 2-->
+                        <article class="tarjeta-testimonio">
+                            <div class="estrellas">⭐⭐⭐⭐</div>
+                            <p class="cita">"Entregaron el proyecto de la aplicación móvil antes de la fecha límite. Un
+                                código impecable y un diseño espectacular."</p>
+                            <div class="perfil-cliente">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&q=80"
+                                    alt="Gerente" class="avatar">
+                                <div>
+                                    <h4>Laura Valdivia</h4>
+                                    <span>Gerente de Operaciones, LogiFast</span>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <!--  6. SECCION UBICACIÓN-->
+            <section id="ubicacion" class="seccion-clara">
+            <div class="contenedor dos-columnas">
+               
+                <div class="texto-nosotros">
+                    <h2 class="titulo-seccion" style="text-align: left;">Visítanos en nuestras oficinas</h2>
+                    <p>Estamos estratégicamente ubicados para atender a clientes de todo el país y el extranjero. Ven a
+                        tomar un café y hablemos de tu próximo gran proyecto tecnológico.</p>
+                    <br>
+                    <p>📍 <strong>Dirección:</strong> Centro Empresarial, Tacna, Perú.</p>
+                    <p>📞 <strong>Teléfono:</strong> +51 987 654 321</p>
+                    <p>✉️ <strong>Email:</strong> proyectos@innovatech.com</p>
+                </div>
+
+                <div class="mapa-contenedor">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121743.08447833054!2d-70.3392437532353!3d-18.01243166567299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915acf5d710bfb7b%3A0xe5a363d6f1406859!2sTacna%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1700000000000!5m2!1ses-419!2spe"
+                        width="100%" height="350"
+                        style="border:0; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--  7. SECCION CONTACTO-->
+         <section id="contacto" class="seccion-oscura">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Inicia tu Proyecto</h2>
+                <p class="subtitulo-seccion" style="color: #cbd5e1;">Déjanos tus datos y nos contactaremos hoy mismo.
+                </p>
+
+                <div class="caja-formulario">
+                    <!-- id="form-contacto" permite capturar el evento submit desde JavaScript -->
+                    <form id="form-contacto">
+                        <div class="grupo-input">
+                            <!-- for="nombre" conecta la etiqueta con el input id="nombre" (al hacer clic enfoca el campo) -->
+                            <label for="nombre">Nombre completo</label>
+                            <!-- required impide enviar el formulario si el campo está vacío -->
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="email">Correo Electrónico</label>
+                            <!-- type="email" valida automáticamente que tenga formato de correo (@) -->
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="mensaje">Tu mensaje</label>
+                            <!-- <textarea> permite escribir textos largos de varias líneas -->
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu visión..."
+                                required></textarea>
+                        </div>
+
+                        <!-- type="submit" dispara el envío del formulario -->
+                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                        <!-- Contenedor vacío donde JS escribirá el mensaje de "Enviando...", éxito o error -->
+                        <div id="mensaje-estado" class="mensaje-estado"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        </main>
+
+
+    <footer class="pie-pagina">
+        <div class="contenedor footer-info">
+            <h3>Innova<span>Tech</span></h3>
+            <!-- &copy; es la entidad HTML para el símbolo de copyright © -->
+            <p>&copy; 2026 Arquitectura de Entornos Web - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    </body>
+
+</html>
